@@ -25,10 +25,14 @@ function App() {
     )
   )
 
+  const handleLogoClick = () =>{
+    window.location = '/';  
+  }
+
   return (
     <div>
       <header className='header'>
-        <img className='header-logo' src={logo} alt="Ingenieria en Computacion" />
+        <img className='header-logo' src={logo} alt="Ingenieria en Computacion" onClick={handleLogoClick}/>
       </header>
       <RouterProvider router={routes} />
       <footer className='footer'>
